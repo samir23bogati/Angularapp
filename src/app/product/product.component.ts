@@ -1,36 +1,39 @@
 import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
-import { RouterOutlet,RouterModule } from '@angular/router';
+import { RouterModule, RouterOutlet } from '@angular/router';
 
 @Component({
-  selector: 'app-product',
-  standalone: true,
-  imports: [RouterOutlet,RouterModule],
-  templateUrl: './product.component.html',
-  styleUrl: './product.component.css'
+    selector: 'app-product',
+    standalone: true,
+    imports: [RouterOutlet, RouterModule],
+    templateUrl: './product.component.html',
+    styleUrl: './product.component.css'
 })
 export class ProductComponent {
-    public products= [
-      {
-        id:1001,
-        title:"iphone",
-        content:'This is apple Product'
-        ,
-      },
-      {
-        id:1002,
-        title:"hiphoohone",
-        content:'This is apple Product'
-        ,
-      },
-      {
-        id:1003,
-        title:"cellhone",
-        content:'This is samirs product',
-      }
+
+    public products = [
+        {
+            id: 1001,
+            title: "iPhone",
+            content: 'This is apple product'
+            ,
+        },
+        {
+            id: 1002,
+            title: "Galaxy 24 Ultra",
+            content: 'This is samsung product'
+            ,
+        },
+        {
+            id: 1003,
+            title: "OPP 101",
+            content: 'This is OPPO product',
+        }
     ];
-    constructor(private httpClient: HttpClient){
-      console.log(this.products);
+
+    constructor(private httpClient: HttpClient) {
+        console.log(this.products);
     }
-      
-    }
+
+
+}
