@@ -1,4 +1,5 @@
 import { Routes } from '@angular/router';
+
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
@@ -7,21 +8,21 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
 
 export const routes: Routes = [
     {
-        path:'',
-        pathMatch:'full',
-        component:HomeComponent
+        path: '',
+        pathMatch: 'full',
+        component: HomeComponent
     },
     {
-        path:'home',
-        component:HomeComponent
+        path: 'home',
+        component: HomeComponent
     },
     {
-        path:'login',
-        component:LoginComponent
+        path: 'login',
+        component: LoginComponent
     },
     {
-        path:'register',
-        component:RegisterComponent
+        path: 'register',
+        component: RegisterComponent
     },
     {
         path: 'product',

@@ -22,3 +22,7 @@ header nav ul li a {
 header nav ul li a.active {
     background: red;
 }
+.active {
+    font-weight: bold;
+    color: #007bff;
+}
