@@ -1,0 +1,19 @@
+header {
+    background: #eee;
+    min-height: 80px;
+}
+header nav ul{
+    text-align: center;
+}
+header nav ul li{
+    display:inline-block;
+}
+header nav ul li a{
+    text-decoration: none;
+    margin: 0 15px ;
+    color:white;
+padding:5px 10px;
+}
+header nav ul li a.active{
+    background:red;
+}

@@ -1,0 +1,30 @@
+<section class="container">
+    <form #registerForm="ngForm">
+        <div class="form-group">
+            <label for="fullname">Full Name</label>
+            <input type="text" id="fullname" [(ngModel)]="fullname" name="fullname" placeholder="Enter Name"
+                class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email {{ email }}</label>
+            <input type="text" id="email" placeholder="Enter Email" [(ngModel)]="email" name="email"
+                class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="text" id="password" placeholder="Enter Password" [(ngModel)]="password" name="password"
+                class="form-control" required>
+        </div>
+        <div class="form-group">
+            <button [disabled]="!registerForm.valid" type="button" class="btn btn-success" (click)="registerNow()"
+                [hidden]="isSubmitting">Register</button>
+
+            <button class="btn btn-sm btn-success" [hidden]="!isSubmitting">
+                <div class="spinner-border" role="status">
+                    <span class="sr-only"></span>
+                </div>
+                Submitting...
+            </button>
+        </div>
+    </form>
+</section>

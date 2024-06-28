@@ -1,0 +1,16 @@
+<section class ="container">
+    <h1> Latest Product</h1>
+    <div class="row">
+        
+            @for (product of products; track product.id){
+                <div class=""col-sm-4>
+                    <div class="product-card">
+                        <h4>{{product.tite}}</h4>
+                        <a routerLink="/product/{{ product.id }}">Read More</a>
+                    </div>
+                </div>
+            }
+        
+        </div>
+        <router-outlet></router-outlet> 
+</section>
