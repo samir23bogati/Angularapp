@@ -2,18 +2,23 @@ header {
     background: #eee;
     min-height: 80px;
 }
-header nav ul{
+
+header nav ul {
     text-align: center;
 }
-header nav ul li{
-    display:inline-block;
+
+header nav ul li {
+    display: inline-block;
 }
-header nav ul li a{
+
+header nav ul li a {
     text-decoration: none;
-    margin: 0 15px ;
-    color:white;
-padding:5px 10px;
+    margin: 0 15px;
+    background: black;
+    color: white;
+    padding: 5px 10px;
 }
-header nav ul li a.active{
-    background:red;
+
+header nav ul li a.active {
+    background: red;
 }
